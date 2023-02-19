@@ -18,7 +18,7 @@ int main(){
     int d = 26;                       // d is the number of characters in the input alphabet 
     int p = 11;                       // Can use any prime number for finding the unique hash value of pattern and text
 
-    for (int i = 0; i < pat.size(); i++)
+    for (int i = 0; i < pat.size(); i++)               // Travering through the pattern to compute the hash value
     {
         hpat = hpat * d;
         hpat = hpat + (((pat[i] - 'A' + 1)) % p);      // Hash value of pattern 
